@@ -1,3 +1,0 @@
-- It's a framework for building applications powered by language models, particularly by chaining together multiple steps like input processing, model calls, and post-processing.
-
-- LangChain is used to create pipelines for more complex workflows involving LLMs, such as question-answering systems, chatbots, or any tasks that involve multiple stages of reasoning or data handling. It can also incorporate external tools and APIs for enhanced functionality.

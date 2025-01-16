@@ -1,3 +1,0 @@
-- It's a data framework designed to structure, index, and query large-scale documents with LLMs. It simplifies the process of using external data sources, like databases or long documents, with LLMs by creating indices that allow efficient querying and context generation.
-
-- It helps integrate LLMs with external knowledge bases by managing the retrieval of relevant information from large datasets.
