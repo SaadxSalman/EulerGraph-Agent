@@ -56,10 +56,4 @@ Create a `.env` file in the `frontend` directory for any necessary API keys or e
 2.  **Start the backend services:**
     Run the necessary Python scripts and services to handle data processing and agentic operations.
 
-## 🤝 Contributing
-
-Contributions are welcome\! If you're interested in improving OncoSense-A.I., please refer to our [CONTRIBUTING.md](https://www.google.com/search?q=https://github.com/saadsalmanakram/OncoSense-A.I./blob/main/CONTRIBUTING.md) for guidelines on submitting pull requests.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](https://www.google.com/search?q=https://github.com/saadsalmanakram/OncoSense-A.I./blob/main/LICENSE) file for more details.
+---
