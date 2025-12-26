@@ -12,13 +12,16 @@ An advanced, multi-modal diagnostic assistant that provides comprehensive cancer
 
 ## ⚙️ Tech Stack
 
-  * **Front-end:** [Next.js](https://nextjs.org/) and [TanStack Query](https://tanstack.com/query/latest)
-  * **Agent Orchestration:** Custom-built multi-agent system
-  * **Vision Analysis:** Vision Transformer on tRPC
-  * **Genomic Analysis:** [GATv2](https://www.google.com/search?q=https://github.com/tech-srl/GATv2-pytorch)
-  * **Vector Search:** [Milvus](https://milvus.io/)
-  * **Image-Text Alignment:** [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224)
-  * **Genomic Embeddings:** [Sentence-Transformers](https://www.sbert.net/)
+* **Front-end:** [Next.js](https://nextjs.org/) (MERN), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/)
+* **State Management:** [TanStack Query](https://tanstack.com/query/latest)
+* **Back-end:** [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), and Python 3.10+
+* **Database:** [MongoDB](https://www.mongodb.com/) (MERN)
+* **Agent Orchestration:** Custom-built multi-agent system
+* **Vision Analysis:** Vision Transformer on tRPC
+* **Genomic Analysis:** [GATv2](https://www.google.com/search?q=https://github.com/tech-srl/GATv2-pytorch)
+* **Vector Search:** [Milvus](https://milvus.io/)
+* **Image-Text Alignment:** [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224)
+* **Genomic Embeddings:** [Sentence-Transformers](https://www.sbert.net/)
 
 ## 🚀 Getting Started
 
