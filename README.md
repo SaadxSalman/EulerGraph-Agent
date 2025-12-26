@@ -100,3 +100,54 @@ Create a `.env` file in the `frontend` directory for any necessary API keys or e
 
 ---
 
+This is the comprehensive, production-ready directory structure for **OncoSense-A.I.**, incorporating the multi-agent system, the AI models (GATv2, ViT, BiomedCLIP), and the full-stack orchestration we've discussed.
+
+### 🏗️ OncoSense-A.I. Final Project Structure
+
+```text
+OncoSense-A.I/
+├── frontend/                        # Next.js Application
+│   ├── src/
+│   │   ├── app/                     # Next.js App Router (UI Pages)
+│   │   ├── components/              # React components (Uploaders, Charts)
+│   │   ├── hooks/                   # TanStack Query custom hooks
+│   │   ├── lib/                     # tRPC client & API definitions
+│   │   └── types/                   # TypeScript interfaces for reports
+│   ├── public/                      # Static medical assets/icons
+│   ├── next.config.js
+│   └── package.json
+├── backend-node/                    # Orchestrator & Gateway
+│   ├── src/
+│   │   ├── trpc/                    # tRPC router & procedure definitions
+│   │   ├── controllers/             # Express logic for user/report management
+│   │   ├── models/                  # MongoDB schemas (Patient, Diagnosis)
+│   │   └── middleware/              # Auth & Error handling
+│   ├── package.json
+│   └── tsconfig.json
+├── backend-ai/                      # Python AI Engine
+│   ├── agents/                      # Multi-Agent Logic
+│   │   ├── triage_agent.py          # Data validation & routing
+│   │   ├── pathology_agent.py       # Orchestrates ViT + BiomedCLIP
+│   │   ├── genomic_agent.py         # Orchestrates GATv2
+│   │   └── reporting_agent.py       # LLM Synthesis & PDF generation
+│   ├── models/                      # Neural Architectures
+│   │   ├── vit_analyzer.py          # Vision Transformer implementation
+│   │   ├── gatv2_model.py           # GATv2 for genomic networks
+│   │   └── biomed_clip.py           # Medical image-text alignment
+│   ├── utils/
+│   │   ├── pdf_generator.py         # ReportLab/FPDF logic
+│   │   └── milvus_client.py         # Vector DB connection helper
+│   ├── weights/                     # Pre-trained model weights (Gitignored)
+│   ├── main.py                      # FastAPI Entry Point
+│   └── requirements.txt
+├── docker/                          # Environment-specific configs
+│   ├── Dockerfile.frontend
+│   ├── Dockerfile.node
+│   └── Dockerfile.ai
+├── docker-compose.yml               # Orchestrates App + MongoDB + Milvus
+├── .env.example                     # Template for environment variables
+└── README.md                        # Documentation
+
+```
+
+---
