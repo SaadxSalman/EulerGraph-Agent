@@ -1,0 +1,24 @@
+[project]
+name = "eulergraph-agent"
+version = "0.1.0"
+description = "Local-first agentic RAG for rigorous mathematical reasoning"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "pydantic-settings>=2.6.0",
+  "sympy>=1.13.0",
+  "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+  "httpx2>=0.1.0",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

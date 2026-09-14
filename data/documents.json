@@ -1,0 +1,86 @@
+[
+  {
+    "id": "euler-identity",
+    "title": "Euler's Formula and Identity",
+    "author": "Leonhard Euler",
+    "kind": "theorem",
+    "text": "For real x, Euler's formula states exp(i x) = cos(x) + i sin(x). At x = pi, this yields exp(i pi) + 1 = 0, relating the fundamental constants 0, 1, pi, e, and i."
+  },
+  {
+    "id": "fundamental-theorem-calculus",
+    "title": "Fundamental Theorem of Calculus",
+    "author": "Isaac Newton and Gottfried Leibniz",
+    "kind": "theorem",
+    "text": "If f is continuous on [a,b] and F(x) = integral from a to x of f(t) dt, then F'(x) = f(x). If F is an antiderivative of f, then integral from a to b of f(x) dx = F(b) - F(a)."
+  },
+  {
+    "id": "linear-algebra-eigenvalues",
+    "title": "Eigenvalues and Characteristic Polynomial",
+    "author": "Linear Algebra Reference",
+    "kind": "definition",
+    "text": "A scalar lambda is an eigenvalue of a square matrix A if there is a nonzero vector v with A v = lambda v. Eigenvalues are roots of the characteristic polynomial det(A - lambda I)."
+  },
+  {
+    "id": "group-homomorphism",
+    "title": "First Isomorphism Theorem",
+    "author": "Abstract Algebra Reference",
+    "kind": "theorem",
+    "text": "For a group homomorphism phi: G -> H, the quotient group G / ker(phi) is isomorphic to im(phi). The map g ker(phi) -> phi(g) is well-defined and bijective."
+  },
+  {
+    "id": "taylor-series",
+    "title": "Taylor's Theorem",
+    "author": "Analysis Reference",
+    "kind": "theorem",
+    "text": "If f has n+1 derivatives near a, f(x) = sum from k=0 to n of f^(k)(a)/k! times (x-a)^k plus a remainder. For analytic functions the Taylor series converges to f within its radius of convergence."
+  },
+  {
+    "id": "cauchy-schwarz-inequality",
+    "title": "Cauchy-Schwarz Inequality",
+    "author": "Analysis Reference",
+    "kind": "inequality",
+    "text": "For vectors u and v in an inner product space, the absolute value of the inner product of u and v is at most the product of their norms. Equality holds exactly when u and v are linearly dependent."
+  },
+  {
+    "id": "rank-nullity-theorem",
+    "title": "Rank-Nullity Theorem",
+    "author": "Linear Algebra Reference",
+    "kind": "theorem",
+    "text": "For a linear map T from a finite-dimensional vector space V to W, dim(V) equals rank(T) plus nullity(T). The image and kernel dimensions account for every degree of freedom in the domain."
+  },
+  {
+    "id": "lagrange-mean-value",
+    "title": "Mean Value Theorem",
+    "author": "Calculus Reference",
+    "kind": "theorem",
+    "text": "If f is continuous on the closed interval [a,b] and differentiable on (a,b), there exists c in (a,b) such that f'(c) = (f(b)-f(a))/(b-a). The theorem converts a global average rate into a local derivative."
+  },
+  {
+    "id": "bayes-theorem",
+    "title": "Bayes Theorem",
+    "author": "Probability Reference",
+    "kind": "theorem",
+    "text": "For events A and B with positive probability, P(A given B) = P(B given A) P(A) / P(B). The denominator can be expanded by the law of total probability when B has multiple causes."
+  },
+  {
+    "id": "fourier-transform",
+    "title": "Fourier Transform Pair",
+    "author": "Applied Mathematics Reference",
+    "kind": "definition",
+    "text": "The Fourier transform represents a suitable function in frequency space: F(omega) = integral over the real line of f(t) exp(-i omega t) dt. Differentiation in time becomes multiplication by i omega."
+  },
+  {
+    "id": "fundamental-group-theorem",
+    "title": "Fundamental Theorem of Finite Abelian Groups",
+    "author": "Algebra Reference",
+    "kind": "theorem",
+    "text": "Every finite abelian group is isomorphic to a direct product of cyclic groups of prime-power order. The invariant factors or elementary divisors determine the decomposition up to isomorphism."
+  },
+  {
+    "id": "markov-inequality",
+    "title": "Markov Inequality",
+    "author": "Probability Reference",
+    "kind": "inequality",
+    "text": "For a nonnegative random variable X and a positive number a, P(X >= a) <= E[X]/a. It follows by comparing the indicator of the event X >= a with X/a."
+  }
+]

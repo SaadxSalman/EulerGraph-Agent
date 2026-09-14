@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EulerGraph-Agent | Rigorous mathematical reasoning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/"><span class="brand-mark">∑</span><span>EulerGraph<span class="accent">.agent</span></span></a>
+      <div class="status"><span class="pulse"></span><span id="healthText">checking index</span></div>
+    </header>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">RIGOROUS RETRIEVAL-AUGMENTED REASONING <span>·</span> v0.1</p>
+        <h1>Turn difficult mathematics<br><em>into a traceable proof.</em></h1>
+        <p class="lede">Ask a question. EulerGraph decomposes the task, finds the right theorem, runs a symbolic sanity check, and leaves you with every step visible.</p>
+      </section>
+      <section class="workspace">
+        <div class="query-panel panel">
+          <div class="panel-head"><span class="panel-label">01 / QUERY</span><span class="shortcut">⌘ ↵ to run</span></div>
+          <textarea id="query" placeholder="e.g. Prove Euler's identity from Euler's formula" autofocus>Prove Euler's identity from Euler's formula</textarea>
+          <div class="query-actions">
+            <div class="modes" role="group" aria-label="Reasoning mode">
+              <button class="mode active" data-mode="auto">Auto</button><button class="mode" data-mode="proof">Proof</button><button class="mode" data-mode="compute">Compute</button><button class="mode" data-mode="explain">Explain</button>
+            </div>
+            <button id="runButton" class="run-button"><span>Run graph</span><span class="run-icon">↗</span></button>
+          </div>
+        </div>
+        <div class="trace-panel panel">
+          <div class="panel-head"><span class="panel-label">02 / AGENT TRACE</span><span id="duration">ready</span></div>
+          <div id="trace" class="trace"><div class="empty-trace">Your reasoning graph will appear here<span>Route → Retrieve → Solve → Verify</span></div></div>
+        </div>
+      </section>
+      <section id="resultSection" class="result-section hidden">
+        <div class="result-main panel">
+          <div class="panel-head"><span class="panel-label">03 / DERIVATION</span><span id="verificationBadge" class="badge">—</span></div>
+          <div id="answer" class="answer"></div>
+          <div class="result-footer"><span id="modelLabel">—</span><div><button id="copyLatex" class="text-button">Copy LaTeX</button><button id="downloadLatex" class="text-button">Download .tex</button></div></div>
+        </div>
+        <aside class="sources-panel panel"><div class="panel-head"><span class="panel-label">04 / EVIDENCE</span><span id="sourceCount">0</span></div><div id="sources"></div></aside>
+      </section>
+    </main>
+    <footer><span>EulerGraph-Agent</span><span>Local-first mathematical intelligence</span><a href="/docs">API docs ↗</a></footer>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
